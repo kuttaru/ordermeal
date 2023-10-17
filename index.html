@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Order Meal">
+    <title>Order Meal</title>
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/responsive.css" />
+
+    <script type="text/javascript" src="assets/js/jquery-3.7.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+
+</head>
+
+<body class="landing-page" ng-app="">
+
+
+    <div id="header" class="header_transparent">
+        <div class="container">
+            <div class="flexrow">
+                <div class="logo-wrap">
+                    <div class="hamburger_menu" data-bs-toggle="modal" data-bs-target="#main-menu"><hr/><hr/><hr/></div>
+                    <div class="logo"><a href="/"><img src="assets/images/logo.svg" alt=""/></a></div>
+                </div>
+
+                <div class="right_menu">
+                    <div class="signbtn">
+                        <a href="/signin.html" class="brd-right">Sign In</a> <a href="/signup.html">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="modal fade" id="main-menu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <span  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
+            <ul class="main-nav">
+                <li><a href="/home.html" class="home">Home</a></li>
+                <li><a href="/about.html" class="about">About Us</a></li>
+                <li><a href="/contact.html" class="om">Contact Order Meal</a></li>
+                <li><a href="/blogs.html" class="blog">Our Blog</a></li>
+                <li><a href="/services.html" class="srvice">Our Services</a></li>
+                <li><a href="/add-restaurant.html" class="rest">Add your Restaurant</a></li>
+                <li><a href="/driver-form.html" class="signup">Signup for Driver</a></li>
+                <li><a href="/giftcard.html" class="gift">Buy OM Gift Cards</a></li>
+                <li><a href="/feedback.html" class="fdback">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <div id="banner">
+        <div class="container">
+            <div class="inner">
+                <h2>Hungry?</h2>
+                <h3 class="normal">Order food from your nearby Restaurants</h3>
+                <div class="find-rest">
+                    <div class="form-item">
+                        <input type="text" class="form-control" placeholder="Enter your location" name="">
+                    </div>
+                    <div class="btn-wrap">
+                        <span class="loc-me">Locate me</span>
+                        <button class="btn">Find Restaurant</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper meal-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="imgwrap slide1"><img src="assets/images/slide1-1.png" alt=""></div>
+                        <div class="imgwrap slide2"><img src="assets/images/slide1-2.png" alt=""></div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgwrap slide1"><img src="assets/images/slide2-1.png" alt=""></div>
+                        <div class="imgwrap slide2"><img src="assets/images/slide2-2.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div id="order_cat">
+        <div class="container">
+            <h3>Order now your favourite food & drinks</h3>
+            
+            <div class="flexwrap">
+                <div class="item">
+                    <a href="/restaurant-details.html">
+                        <div class="imgwrap"><img src="assets/images/indian.svg"></div>
+                        <h4>Indian</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/restaurant-details.html">
+                        <div class="imgwrap"><img src="assets/images/liquor.svg"></div>
+                        <h4>Liquor</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/restaurant-details.html">
+                        <div class="imgwrap"><img src="assets/images/sushi.svg"></div>
+                        <h4>Sushi</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/restaurant-details.html">
+                        <div class="imgwrap"><img src="assets/images/cafe.svg"></div>
+                        <h4>Cafe</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/restaurant-details.html">
+                        <div class="imgwrap"><img src="assets/images/european.svg"></div>
+                        <h4>European</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/restaurant-details.html">
+                        <div class="imgwrap"><img src="assets/images/burgers.svg"></div>
+                        <h4>Burgers</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/restaurant-details.html">
+                        <div class="imgwrap"><img src="assets/images/kebabs.svg"></div>
+                        <h4>Kebabs</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/restaurant-details.html">
+                        <div class="imgwrap"><img src="assets/images/pizza.svg"></div>
+                        <h4>Pizza</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/restaurant-details.html">
+                        <div class="imgwrap"><img src="assets/images/japanese.svg"></div>
+                        <h4>Japanese</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/restaurant-details.html">
+                        <div class="imgwrap"><img src="assets/images/thai.svg"></div>
+                        <h4>Thai</h4>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="/restaurant-details.html">
+                        <div class="imgwrap"><img src="assets/images/chinese.svg"></div>
+                        <h4>Chinese</h4>
+                    </a>
+                </div>
+            </div>
+
+
+
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="hmbox">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="inner ord_box">
+                        <div class="imgwrap"><img src="assets/images/hmbx1.svg" alt=""></div>
+                        <h3>Order from your<br />favourite restaurants</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="inner tra_box">
+                        <div class="imgwrap"><img src="assets/images/cafe-con.svg" alt=""></div>
+                        <h3>Cafe Connect</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="inner fast_box">
+                        <div class="imgwrap"><img src="assets/images/table.svg" alt=""></div>
+                        <h3>Table Reservation</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="giftcard-wrap">
+        <div class="container">
+            <div class="gift_card">
+                <div class="inner">
+                    <h3>Now grab your gift cards</h3>
+                    <h1>$10 to $ 100</h1>
+                    <p>Redeem your gift card now !</p>
+                </div>
+                <i class="gift-img"></i>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+
+    <div id="download_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="download_content">
+                        <h3>Download our<br />mobile application</h3>
+                        <h4>GET $6 OFF when you spend over $40*</h4>
+                        <h4 class="orange-text">Voucher Code : OM2021</h4>
+                        <p>If you like ordering your favourite meals via Order Meal’s unique platform, you will be happy
+                            to know that you can improve that superb experience with the Order Meal app.</p>
+                        <div class="flexrow">
+                            <div class="item middle">
+                                <div class="imgwrap"><img src="assets/images/gpay.png" alt=""></div>
+                            </div>
+                            <div class="item middle">
+                                <div class="imgwrap"><img src="assets/images/ios.png" alt=""></div>
+                            </div>
+                            <div class="item middle">
+                                <div class="imgwrap"><img src="assets/images/qr-code.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 dwn-bg">
+                    <!-- <div class="imgwrap"><img src="assets/images/download_bg.png" alt=""></div> -->
+                    <div class="food_burger moveY"><img src="assets/images/food_burger.png" alt=""></div>
+                    <div class="food_french moveX"><img src="assets/images/food_french_fries.png" alt=""></div>
+                    <div class="drink_soda moveX"><img src="assets/images/drink_soda.png" alt=""></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="service-wrap">
+        <div class="container">
+            <h3>Our Services</h3>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="inner order-system">
+                        <h3>Online <br />ordering system</h3>
+                        <p>If you’re a restaurant owner, cafe owner, liquor store owner, or a small business / large
+                            business owner, our online ordering system will suit you perfectly.</p>
+                        <div class="imgwrap"><img src="assets/images/desktop.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="inner reserve-box">
+                        <h3>Reserve <br />a table</h3>
+                        <p>“Reserve a table” is an exclusive feature that both customers and restaurants can use
+                            whenever they want.</p>
+                        <div class="imgwrap"><img src="assets/images/book.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="inner point-box">
+                        <h3>Point <br />of sale</h3>
+                        <p>Do you need a POS system for your newly opened restaurant or small business? If so, the Order
+                            Meal POS system is here for you!</p>
+                        <div class="imgwrap"><img src="assets/images/point.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="inner waiter-box">
+                        <h3>Online waiter <br />table ordering</h3>
+                        <p>All restaurants that apply for this service will get a little stand on each table with a
+                            scannable QR code.</p>
+                        <div class="imgwrap"><img src="assets/images/waiter.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="inner atm-box">
+                        <h3>Self-<br />Checkout</h3>
+                        <p>You can point your customers to a self-checkout area that is automatically provided by Order
+                            Meal.</p>
+                        <div class="imgwrap"><img src="assets/images/atm.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="inner card-box">
+                        <h3>Gift <br />Cards</h3>
+                        <p>Our customers can purchase special gift cards from us and give them away to their significant
+                            other and all people who are close to their hearts in general.</p>
+                        <div class="imgwrap"><img src="assets/images/card.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="inner shop-box">
+                        <h3>Order Meal <br />Market Place</h3>
+                        <p>Register your restaurant, cafe or store with us.</p>
+                        <div class="imgwrap"><img src="assets/images/shop.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="add-resturant">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 middle">
+                    <div class="inner">
+                        <h2>Want to add your<br />restaurant with us?</h2>
+                        <p><a href="#" class="btn">Add your Restaurant</a></p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="imgwrap">
+                        <img src="assets/images/resturent.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="find-city">
+        <div class="container">
+            <div class="flexrow">
+                <div class="city-wrap">
+                    <div class="logoimg"><img src="assets/images/logo.svg" alt="" /></div>
+                    <div class="imgwrap"><img src="assets/images/citymap.png" alt="" /></div>
+                </div>
+                <div class="city-links">
+                    <div class="inner">
+                        <h3>Find where to<br />eat in your city</h3>
+                        <p>Select Location</p>
+                        <ul>
+                            <li><a href="#">Auckland</a></li>
+                            <li><a href="#">Hamilton</a></li>
+                            <li><a href="#">Tauranga</a></li>
+                            <li><a href="#">Rotoura</a></li>
+                            <li><a href="#">Christchurch</a></li>
+                            <li><a href="#">Wellington</a></li>
+                            <li><a href="#">Whagarei</a></li>
+                            <li><a href="#">Dunedin</a></li>
+                            <li><a href="#">Hurunui</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="delivery-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 middle">
+                    <div class="inner">
+                        <h4>Who We Are</h4>
+                        <h3>Order Meal Online - Food Takeaway <br />and Delivery in Auckland, New Zealand</h3>
+                        <p>Offering an extensive range of affordable takeaway meal options, Order Meal is a New Zealand
+                            owned company with a secure online ordering system for ordering meals. It’s fast, easy to
+                            use… and gives you the best prices around.</p>
+                        <p><a href="#" class="btn">Learn More</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="imgwrap"><img src="assets/images/bike.png" alt="" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="flexrow links_row">
+                <div class="appwrap">
+                    <div class="imgwrap"><img src="assets/images/logo-white.svg" alt=""></div>
+                    <div class="get-app">
+                        <a href="#"><img src="assets/images/gpay.png" alt=""></a>
+                        <a href="#"><img src="assets/images/ios.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="links_wrap quick-links">
+                    <h3>Quick Links</h3>
+                    <ul class="qu_links">
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/contact.html">Contact Order Meal</a></li>
+                        <li><a href="/blogs.html">Our Blog</a></li>
+                        <li><a href="/services.html">Our Services</a></li>
+                        <li><a href="/add-restaurant.html">Add your Restaurant</a></li>
+                        <li><a href="/driver-form.html">Signup for Driver</a></li>
+                        <li><a href="/giftcard.html">Buy OM Gift Cards</a></li>
+                        <li><a href="/feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <ul>
+                        <li class="fb"><a href="#"><img src="assets/images/facebook.png" alt="" /></a></li>
+                        <li><a href="#"><img src="assets/images/insta.png" alt="" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flexrow cities_row">
+                <div class="appwrap">
+                    <div class="paycars">
+                        <a href="#"><img src="assets/images/visa.png" alt=""></a>
+                        <a href="#"><img src="assets/images/mastercard.png" alt=""></a>
+                        <a href="#"><img src="assets/images/americanexpress.png" alt=""></a>
+                        <a href="#"><img src="assets/images/golepay.png" alt=""></a>
+                        <a href="#"><img src="assets/images/apple_pay.png" alt=""></a>
+                        <a href="#"><img src="assets/images/windcave.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="links_wrap top-citys">
+                    <h3>Our Top Cities</h3>
+                    <ul class="city_links">
+                        <li><a href="#">Auckland</a></li>
+                        <li><a href="#">Christchurch</a></li>
+                        <li><a href="#">Wellington</a></li>
+                        <li><a href="#">Hamilton</a></li>
+                        <li><a href="#">Tauranga</a></li>
+                        <li><a href="#">Lower Hutt</a></li>
+                        <li><a href="#">Dunedin</a></li>
+                        <li><a href="#">Northland</a></li>
+                        <li><a href="#">Bay of Plenty</a></li>
+                        <li><a href="#">Rodney</a></li>
+                        <li><a href="#">Hauraki</a></li>
+                        <li><a href="#">Rotorua</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="copyright">
+            <div class="container">
+                <ul>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms and Conditions</a></li>
+                    <li><a href="/feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
