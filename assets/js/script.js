@@ -1,13 +1,13 @@
 (function($) {
   $(document).ready(function() {
 
-/*
+
   $('body a').each(function(){ 
     var oldUrl = $(this).attr("href"); 
-    var newUrl = ("/order-meal" + oldUrl );
+    var newUrl = ("/ordermeal" + oldUrl );
     $(this).attr("href", newUrl);
   });
-*/
+
 
     $(window).scroll(function(){
         if ($(window).scrollTop() >= 250) {
@@ -43,32 +43,6 @@
   });
 
 
-var swiper = new Swiper(".dateslide", {
-  slidesPerView: 3,
-  spaceBetween: 6,
-  // loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-      40: {
-        slidesPerView: 2,
-      },
-      740: {
-        slidesPerView: 3,
-      }
-    }
-
-
-});
-
-
-
 
   $(".count_input span").on("click", function() {
     var $button = $(this);
@@ -85,10 +59,6 @@ var swiper = new Swiper(".dateslide", {
   });
 
 
-
-$('.dropdown-menu .dateslide').on('click', function(event){
-    event.stopPropagation();
-});
 
 
 

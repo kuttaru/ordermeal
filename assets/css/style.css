@@ -288,6 +288,7 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
 #copyright ul li:last-child:before { content: normal; }
 
 
+
 /* ============ fixed-header ============ */
 body { padding-top: 90px; }
 body.landing-page { padding-top: 0; }
@@ -295,6 +296,29 @@ body.landing-page { padding-top: 0; }
 body.fixed-header #header { -webkit-animation: scrl_menu .4s ease; -moz-animation: scrl_menu .4s ease; animation: scrl_menu .4s ease; }
 body.fixed-header #header.header_transparent { position: fixed; background: #fff; box-shadow: 0px 0px 3px rgb(0 0 0 / 40%); }
 body.fixed-header #header { position: fixed; }
+
+/* ============ Pages ============ */
+
+
+/* --- Signin pages --- */
+.signin-page #main-content { background: url(../images/login-bg.png) no-repeat; background-size: cover; }
+.sign-form { width:90%; max-width: 490px;  margin: 20px auto; padding: 30px; }
+.sign-form { background: #fff; border-radius: 20px; }
+.sign-form h3 { margin: 0 0 20px; font-size: 22px; color: #FC6143; font-weight: 500; }
+.sign-form .frgt-pas a { color: #FC6143; }
+.sign-form .btn-wrap .btn { width: 100%; border-radius: 30px; padding: 10px 20px; }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------ Move ----- */
 .moveX { -moz-animation: moveX 20s infinite linear; animation: moveX 20s infinite ease; }
