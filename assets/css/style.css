@@ -358,12 +358,16 @@ body.fixed-header #header { position: fixed; }
 }
 
 
+/* ====================== */
 
-
-
-
-
-
+.prdt_box img { border-radius: 20px; }
+.prdt_box h4 { font-size: 16px; margin: 16px 0 0; }
+.prdt_box p { margin: 6px 0; }
+.prdt_box .categ b { font-weight: normal; color: #707070; padding-right: 16px; position: relative; display: inline-block; }
+.prdt_box .categ b:before { content: ''; display: block; width: 4px; height: 4px; background: #707070; position: absolute; top: 10px; right: 5px; border-radius: 20px; }
+.prdt_box .categ b:last-child:before { content: normal; }
+.prdt_box .time-wrap { display: flex; flex-wrap: wrap; justify-content: space-between; }
+.prdt_box .time-wrap a { display: block; background: #FC6143; color: #fff; padding: 2px 8px; border-radius: 21px; }
 
 
 
