@@ -44,7 +44,7 @@ table{ width:100%; }
 .form-control::-ms-input-placeholder { color: #707070; }
 .radio_wrap label { display: inline-block; padding: 5px 16px; position: relative; padding-left: 40px; color: #000; font-size: 16px; cursor: pointer; }
 .radio_wrap input { position: absolute; opacity: 0; pointer-events: none; }
-.radio_wrap span:before { content: ''; position: absolute; left: 1px; top: 1px; margin: 4px; width: 22px; height: 22px; z-index: 0; -webkit-transition: .28s ease; transition: .28s ease; background: #707070; border-radius: 30px; border: 3px solid #fff; box-shadow: 0 0 0 1px #fff; }
+.radio_wrap span:before { content: ''; position: absolute; left: 1px; top: 1px; margin: 4px; width: 26px; height: 26px; z-index: 0; -webkit-transition: .28s ease; transition: .28s ease; background: #fff; border-radius: 30px; border: 3px solid #fff; box-shadow: 0 0 0 1px #fff; border:1px solid #acacac; }
 .radio_wrap input:checked+span:before { background: #FC6143; border: 3px solid #fff; box-shadow: 0 0 0 1px #FC6143; }
 
 .count_input { position: relative; }
@@ -406,8 +406,6 @@ p.cal-bkng { background: url(../images/calendar-icon.svg) no-repeat; padding-lef
 #details-faq .accordion-body { padding: 4px 40px; }
 #details-faq .accordion-item .acd-title .clps_icon { top: 44px; }
 #details-faq .accordion-item .acd-title.collapsed .clps_icon { top: 39px; }
-
-
 .details-side .inner h3 { font-size: 22px; padding: 26px 30px 11px; margin: 0; border-bottom: 1px solid #e2e2e2; }
 .details-side .form-control { background: none; padding-left: 0; }
 .details-side .input-field { margin: 0; padding: 24px 30px 10px; }
@@ -417,6 +415,30 @@ p.cal-bkng { background: url(../images/calendar-icon.svg) no-repeat; padding-lef
 
 .gallery-full { display: flex; flex-wrap: wrap; padding: 20px 40px; }
 .gallery-full img { width: 33.33%; padding: 6px; }
+
+
+.form-control.tel-icon { background: url(../images/details-icon.svg) no-repeat; padding-left: 50px; background-position: 17px -280px; }
+.form-control.loc-icon { background: url(../images/details-icon.svg) no-repeat; padding-left: 50px; background-position: 17px -318px; }
+.pickup-delivery .form-control { background-color:#f1f1f1; border-radius:20px }
+.pickup-delivery .input-field { padding-top: 18px; }
+.details-side .pickup-delivery h3 { margin-bottom: 10px; }
+.details-side .pickup-delivery { padding-bottom: 30px; }
+.map-wrap .imgwrap { padding: 12px; }
+.map-wrap .imgwrap img { border-radius: 12px; }
+
+
+.addition-info .item{padding: 20px 32px; position:relative; }
+.addition-info .item p{ margin:0 }
+.addition-info .icon { width: 25px; height: 30px; position: absolute; top: 23px; left: 0px; background: url(../images/details-icon.svg) no-repeat; }
+.addition-info .icon-road { background-position: 0px 4px; }
+.addition-info .icon-hour { background-position: 1px -41px; }
+.addition-info .icon-cuisin { background-position: 0px -81px; }
+.addition-info .icon-dining { background-position: 0px -123px; }
+.addition-info .icon-parking { background-position: 0px -166px; }
+.addition-info .icon-payment { background-position: 1px -209px; }
+.addition-info .icon-adition { background-position: 0px -252px; }
+.addition-info a{ color:#FC6143; }
+.view-link {padding: 0px 32px; font-weight: bold;}
 
 /* ------ Move ----- */
 .moveX { -moz-animation: moveX 20s infinite linear; animation: moveX 20s infinite ease; }
@@ -457,40 +479,46 @@ p.cal-bkng { background: url(../images/calendar-icon.svg) no-repeat; padding-lef
 
 
 /* ====================== */
-/*body{background: url(../images/aaa.png) no-repeat;}*/
 
+/*
+body{background: url(../images/aaa.png) no-repeat;}
 body #main-content{min-height: 3000px;}
-.form-control.tel-icon { background: url(../images/details-icon.svg) no-repeat; padding-left: 50px; background-position: 17px -280px; }
-.form-control.loc-icon { background: url(../images/details-icon.svg) no-repeat; padding-left: 50px; background-position: 17px -318px; }
-.pickup-delivery .form-control { background-color:#f1f1f1; border-radius:20px }
-.pickup-delivery .input-field { padding-top: 18px; }
-.details-side .pickup-delivery h3 { margin-bottom: 10px; }
-.details-side .pickup-delivery { padding-bottom: 30px; }
-.map-wrap .imgwrap { padding: 12px; }
-.map-wrap .imgwrap img { border-radius: 12px; }
+*/
 
+.payment-page {background: #f1f1f1;}
+.payment-page #main-content { padding-top: 90px; }
+.payment-page #main-content .container { max-width: 1020px; }
+.payment-main { background: #fff; border-top-left-radius: 20px;
+border-top-right-radius: 20px; }
+.payment-side { margin-left: 10px; padding: 30px; background:#fff; border-radius:20px; }
 
-.addition-info .item{padding: 20px 32px; position:relative; }
-.addition-info .item p{ margin:0 }
-.addition-info .icon { width: 25px; height: 30px; position: absolute; top: 23px; left: 0px; background: url(../images/details-icon.svg) no-repeat; }
-.addition-info .icon-road { background-position: 0px 4px; }
-.addition-info .icon-hour { background-position: 1px -41px; }
-.addition-info .icon-cuisin { background-position: 0px -81px; }
-.addition-info .icon-dining { background-position: 0px -123px; }
-.addition-info .icon-parking { background-position: 0px -166px; }
-.addition-info .icon-payment { background-position: 1px -209px; }
-.addition-info .icon-adition { background-position: 0px -252px; }
-.addition-info a{ color:#FC6143; }
-.view-link {padding: 0px 32px; font-weight: bold;}
+.almost-done { padding: 38px 30px 10px; }
+.almost-done h3 { font-size: 22px; }
+.almost-done h3.orange-text { font-weight: normal; margin-top: 24px; }
+.almost-done ul { display: flex; }
+.almost-done ul li { padding-left: 30px; margin-right: 10px; background: url(../images/date-time.svg) no-repeat; }
+.almost-done ul li.calendar { background-position: 7px 5px; }
+.almost-done ul li.time { background-position: 8px -48px; }
+.almost-done ul li.person { background-position: 8px -104px; }
+.almost-done h4 { border-top: 1px solid #e2e2e2; border-bottom: 1px solid #e2e2e2; font-weight: normal; margin: 32px -30px 0px; padding: 22px 30px 25px; }
+.almost-done h4 b { color: #FC6143; }
 
+.dinner-details { padding: 0px 30px;border-bottom:1px solid #e2e2e2; }
+.dinner-details h3 { font-size: 22px; margin: 22px 0 40px; }
 
+.bank_choose label { padding-left: 50px; }
+.bank_choose label span { font-size: 18px; font-weight: 500; }
+.bank_choose p { color: #707070; font-size: 12px; margin: 0; }
+.bank_choose .card_icon { background: url(../images/credit-card.svg) no-repeat; padding-left: 40px; background-position: 3px 6px; display: block; }
+.bank_choose .bank_icon { background: url(../images/bank.svg) no-repeat; padding-left: 40px; display: block; background-position:3px 1px; }
 
+.paymethod { padding: 10px 30px }
+.paymethod h3 { font-size: 22px }
+.payment-main .btn-wrap { padding: 40px 30px 10px; }
+.payment-main .btn-wrap .btn { height: 70px; font-weight: bold; font-size: 18px; border-radius: 20px; }
 
-
-
-
-
-
-
+.know-before h3 { font-size: 22px; margin: 18px 0 0; }
+.order_bg{ margin-bottom:80px }
+.order_bg img{ width:100%; }
 
 
