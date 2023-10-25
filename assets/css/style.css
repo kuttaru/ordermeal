@@ -33,7 +33,7 @@ body.grey-bg #main-content { padding: 80px 0; }
 table{ width:100%; }
 /*--- input ---*/
 .input-field { margin-bottom: 20px; }
-.form-control { background: #F1F1F1; border: none; border-radius: 0px; color: #000; padding:.5rem .75rem }
+.form-control { background: #F1F1F1; border: none; border-radius: 0px; color: #000; padding:.5rem .75rem; height:50px }
 .checkbox-wrap a{color:#FC6143; }
 .checkbox [type="checkbox"] { position: absolute; opacity: 0; pointer-events: none; }
 .checkbox span { position: relative; padding-left: 30px; cursor: pointer; display: inline-block; height: 25px; line-height: 25px; font-size: 1rem; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-weight: 500; }
@@ -351,20 +351,20 @@ p.cal-bkng { background: url(../images/calendar-icon.svg) no-repeat; padding-lef
 
 
 /* =========== Detail page ============= */
-.details-main .inner { border: 1px solid #00f; border-radius: 20px; overflow: hidden;  margin-bottom: 60px}
+.details-main .inner { background: #fff; border-radius: 20px; overflow: hidden;  margin-bottom: 60px}
 .details-side .inner { margin-left: 10px;  }
 
-.details-side .shadow-box{border-radius: 20px; border: 1px solid #f00; margin-bottom: 20px}
+.details-side .shadow-box{border-radius: 20px; margin-bottom: 20px; box-shadow: 0px 0px 6px #c9c9c9; background: #fff;}
 
 
 .details-wrap { position: relative; z-index: 1; margin-top: -62px; }
-.details-main .inner { border-radius: 20px; overflow: hidden; }
+.details-main .inner { border-radius: 20px; box-shadow: 0px 0px 6px #c9c9c9}
 
-.details-main .nav-tabs { border-bottom: 1px solid #707070; padding-left: 40px; }
+.details-main .nav-tabs { border-bottom: 1px solid #e2e2e2; padding-left: 40px; }
 .details-main .nav-tabs li.nav-item { }
 .details-main .nav-tabs li.nav-item a { border: none; color: #000; padding: 0px 25px; }
 .details-main .nav-tabs li.nav-item a.active { background: none; }
-.details-main .nav-tabs li.nav-item a b { font-weight: normal; display: block; padding: 20px 0; border-bottom: 1px solid #707070; }
+.details-main .nav-tabs li.nav-item a b { font-weight: normal; display: block; padding: 20px 0; border-bottom: 1px solid #e2e2e2; }
 .details-main .nav-tabs li.nav-item a.active b { border-bottom: 1px solid #FC6143; color: #FC6143; }
 
 
@@ -408,10 +408,10 @@ p.cal-bkng { background: url(../images/calendar-icon.svg) no-repeat; padding-lef
 #details-faq .accordion-item .acd-title.collapsed .clps_icon { top: 39px; }
 
 
-.details-side .inner h3 { font-size: 22px; padding: 26px 30px 11px; margin: 0; border-bottom: 1px solid #f00; }
+.details-side .inner h3 { font-size: 22px; padding: 26px 30px 11px; margin: 0; border-bottom: 1px solid #e2e2e2; }
 .details-side .form-control { background: none; padding-left: 0; }
 .details-side .input-field { margin: 0; padding: 24px 30px 10px; }
-.details-side .row { margin: 0; padding: 12px 30px 10px; border-bottom: 1px solid #f00; }
+.details-side .row { margin: 0; padding: 12px 30px 10px; border-bottom: 1px solid #e2e2e2; }
 .details-side .btn-wrap { margin: 0; padding: 12px 30px 10px; }
 .details-side .row .input-field { padding: 0; border-bottom: none; }
 
@@ -457,25 +457,38 @@ p.cal-bkng { background: url(../images/calendar-icon.svg) no-repeat; padding-lef
 
 
 /* ====================== */
-body{background: url(../images/aaa.png) no-repeat;}
+/*body{background: url(../images/aaa.png) no-repeat;}*/
+
 body #main-content{min-height: 3000px;}
-.details-main .inner{ min-height:200vh; }
-
-
-.form-control.tel-icon { background: url(../images/details-icon.svg) no-repeat; padding-left: 40px; background-position: 10px -285px; }
-.form-control.loc-icon { background: url(../images/details-icon.svg) no-repeat; padding-left: 40px; background-position: 10px -324px; }
-.pickup-delivery .form-control { border: 1px solid #f00 }
+.form-control.tel-icon { background: url(../images/details-icon.svg) no-repeat; padding-left: 50px; background-position: 17px -280px; }
+.form-control.loc-icon { background: url(../images/details-icon.svg) no-repeat; padding-left: 50px; background-position: 17px -318px; }
+.pickup-delivery .form-control { background-color:#f1f1f1; border-radius:20px }
 .pickup-delivery .input-field { padding-top: 18px; }
 .details-side .pickup-delivery h3 { margin-bottom: 10px; }
 .details-side .pickup-delivery { padding-bottom: 30px; }
+.map-wrap .imgwrap { padding: 12px; }
+.map-wrap .imgwrap img { border-radius: 12px; }
 
 
-.map-wrap .imgwrap {
-    padding: 12px;
-}
-.map-wrap .imgwrap img{
-	border-radius: 12px;
-}
+.addition-info .item{padding: 20px 32px; position:relative; }
+.addition-info .item p{ margin:0 }
+.addition-info .icon { width: 25px; height: 30px; position: absolute; top: 23px; left: 0px; background: url(../images/details-icon.svg) no-repeat; }
+.addition-info .icon-road { background-position: 0px 4px; }
+.addition-info .icon-hour { background-position: 1px -41px; }
+.addition-info .icon-cuisin { background-position: 0px -81px; }
+.addition-info .icon-dining { background-position: 0px -123px; }
+.addition-info .icon-parking { background-position: 0px -166px; }
+.addition-info .icon-payment { background-position: 1px -209px; }
+.addition-info .icon-adition { background-position: 0px -252px; }
+.addition-info a{ color:#FC6143; }
+.view-link {padding: 0px 32px; font-weight: bold;}
+
+
+
+
+
+
+
 
 
 
