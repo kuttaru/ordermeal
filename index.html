@@ -27,6 +27,22 @@
 
     <script type="text/javascript" src="assets/js/swiper.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript">
+    (function($) {
+      $(document).ready(function() {
+        var swiper = new Swiper(".meal-slider", {
+            spaceBetween: 0,
+            slidesPerView: 1,
+            effect: "fade",
+            speed: 3000,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false
+            },
+        });
+      });
+    })(jQuery);
+    </script>
 
 
 </head>

@@ -105,6 +105,7 @@
         </div>
         <div class="input-field col-md-6">
             <select class="form-control">
+                <option value="0">Select an occasion</option>
                 <option value="1">Option 1</option>
                 <option value="2">Option 2</option>
                 <option value="3">Option 3</option>
@@ -140,7 +141,7 @@
 
 
 <div class="btn-wrap">
-    <button class="btn full-width">Submit</button>
+    <button class="btn full-width paynow">Submit</button>
 </div>
 
 </div>
@@ -175,6 +176,28 @@
     </div>
 </div>
 
+
+<script type="text/javascript">
+    $("body").on('click', '.paynow', function () {
+        setTimeout(function() {
+            $('#thank_you').modal('show');
+        }, 500);
+    });
+</script>
+
+<div class="modal fade" id="thank_you" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <img src="assets/images/thak-left.svg" class="left-brd">
+        <img src="assets/images/thak-right.svg" class="right-brd">
+        <div class="modal-content">
+            <div class="imgwrap"><img src="assets/images/thank_you.png"></div>
+            <!-- <span  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span> -->
+            <h4>Thank you</h4>
+            <p>Thanks for your booking request, your reference is #TE6385F5. You will get a booking confirmation from the restaurant.</p>
+            
+        </div>
+    </div>
+</div>
 
 
 <div id="footer">
