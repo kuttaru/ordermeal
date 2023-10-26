@@ -39,13 +39,13 @@
 
         $('#photo-tab').click(function(e){
             e.preventDefault();
-            $('.nav-tabs a[href="#photos-tab"]').tab('show');
+            $('.nav-tabs a.photab').tab('show');
              $("body,window").scrollTop(0);
         });        
 
         $('#menutab').click(function(e){
             e.preventDefault();
-            $('.nav-tabs a[href="#menu-tab"]').tab('show');
+            $('.nav-tabs a.mentab').tab('show');
 
 
         });
@@ -122,10 +122,10 @@
             <a class="nav-link active" data-bs-toggle="tab" href="#overview-wrap"><b>Overview</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#photos-tab"><b>Photos</b></a>
+            <a class="nav-link photab" data-bs-toggle="tab" href="#photos-tab"><b>Photos</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#menu-tab"><b>Menu</b></a>
+            <a class="nav-link mentab" data-bs-toggle="tab" href="#menu-tab"><b>Menu</b></a>
           </li>
         </ul>
 
