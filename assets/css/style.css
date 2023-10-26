@@ -436,7 +436,7 @@ p.cal-bkng { background: url(../images/calendar-icon.svg) no-repeat; padding-lef
 
 
 .gallery-full { display: flex; flex-wrap: wrap; padding: 20px 40px; }
-.gallery-full img { width: 33.33%; padding: 6px; }
+.gallery-full a { width: 33.33%; padding: 6px; display:block; }
 
 
 .form-control.tel-icon { background: url(../images/details-icon.svg) no-repeat; padding-left: 50px; background-position: 17px -280px; }
@@ -662,3 +662,22 @@ body #main-content{min-height: 3000px;}
     margin-top: 12px;
 }
 .show_filter img{ width:30px;}
+
+
+
+
+
+
+
+.menu-wrap p.menu-item span{
+	display: flex;
+}
+
+.menu-wrap p.menu-item span img{
+	width: 40px;
+	border-radius: 8px;
+}
+.menu-wrap p.menu-item b{
+	padding-top: 10px;
+	padding-left: 10px;
+}
