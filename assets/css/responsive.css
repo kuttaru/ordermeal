@@ -153,6 +153,9 @@
     .date-people .time-sel { border: none; }
     .datepeo-wrap .date-people .date-time { padding: 0 }
     .datepeo-wrap .date-people .date-time .input-field { border-bottom: 1px solid #e2e2e2; }
+    .prdt-horiz .prdt_box{ display:block; margin-bottom:0 }
+    .prdt-horiz .prdt_box .imgwrap{ width:100%; }
+    .prdt-horiz .prdt_box .inner{ width:100%; padding-left:0; padding-top:16px }
 
 
 

@@ -324,9 +324,9 @@ p.cal-bkng { background: url(../images/calendar-icon.svg) no-repeat; padding-lef
 
 .listing-page #main-content { padding-top: 68px; }
 .outdoor-wrap h2, .avail-wrap h2 { font-size: 30px; margin-bottom: 34px; }
-.outdoor-wrap { margin-top: 70px; padding-top: 1px; }
+.outdoor-wrap { padding-top: 1px; }
 .prdt_box .time-wrap a.bdr-btn { border: 1px solid #FC6143; background: #fff; color: #000; }
-.favorite-restu { padding-top: 1px; margin-top: 80px; }
+.favorite-restu { padding-top: 1px; margin-top: 20px; }
 .favorite-restu h2 { font-size: 30px; margin-bottom: 10px; }
 .favorite-restu .upd-date { color: #707070; margin: 10px 0; }
 .favorite-restu .row { padding-top: 30px }
@@ -336,7 +336,7 @@ p.cal-bkng { background: url(../images/calendar-icon.svg) no-repeat; padding-lef
 .favres-text .time-wrap a { margin-right: 12px }
 .trending-wrap { padding-top: 1px; margin-top: 30px; }
 .trending-wrap .row { padding-top: 18px; }
-.discover-wrap { margin-top: 120px; }
+.discover-wrap { margin-top: 60px; }
 .discover-wrap h2 { font-size: 30px; margin: 0; }
 .faq-wrap { padding-top: 1px; margin: 60px auto; }
 
