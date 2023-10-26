@@ -4,7 +4,7 @@
 
   $('body a').each(function(){ 
     var oldUrl = $(this).attr("href"); 
-    var newUrl = ("/ordermeal" + oldUrl );
+    var newUrl = ("/ordermeal/" + oldUrl );
     $(this).attr("href", newUrl);
   });
 
